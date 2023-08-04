@@ -16,13 +16,7 @@
 -- -- Rename the new BOOLEAN column to the original column name (optional)
 -- ALTER TABLE taxi_trips_2017 RENAME COLUMN new_store_and_fwd_flag TO store_and_fwd_flag;
 
--- SELECT 
---     lpep_pickup_datetime,
---     lpep_dropoff_datetime,
---     lpep_dropoff_datetime - lpep_pickup_datetime AS trip_duration
--- FROM 
---     taxi_trips_2017
--- LIMIT 3;
+
 
 -- -- Add a new column for trip_duration
 -- ALTER TABLE taxi_trips_2017
@@ -46,6 +40,7 @@
 -- WHERE passenger_count <= 0;
 
 
+
 -- ALTER TABLE taxi_trips_2017
 -- ADD COLUMN payment_type_description text;
 
@@ -62,6 +57,7 @@
 --     END;
 
 
+
 -- ALTER TABLE taxi_trips_2017
 -- ADD COLUMN trip_type_description text;
 
@@ -73,15 +69,23 @@
 --         ELSE 'Invalid'
 --     END;
 
-SELECT trip_type_description, COUNT(*) AS trip_count
-FROM taxi_trips_2017
-GROUP BY trip_type_description;
+-- Filter rows with trip_distance_km > 0
+SELECT *
+FROM trips_2020
+WHERE trip_distance_km > 0;
 
--- SELECT trip_type, COUNT(*) AS trip_count
--- FROM taxi_trips_2017
--- GROUP BY trip_type;
+-- Filter rows with total_amount >= 0
+SELECT *
+FROM trips_2020
+WHERE total_amount >= 0;
 
--- SELECT *
--- FROM taxi_trips_2017
--- LIMIT 5;
+-- Filter rows with time_diff > 0
+SELECT *
+FROM trips_2020
+WHERE time_diff > INTERVAL '0 seconds';
+
+-- Filter rows with passenger_count >= 0
+SELECT *
+FROM trips_2020
+WHERE passenger_count >= 0;
 

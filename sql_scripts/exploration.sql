@@ -1,8 +1,10 @@
 -- Calculate Average Fare Amount
-SELECT AVG(fare_amount) FROM taxi_trips_2017;
+SELECT AVG(fare_amount) 
+FROM taxi_trips_2017;
 
 -- Calculate Total Trip Distance
-SELECT SUM(trip_distance) FROM taxi_trips_2017;
+SELECT SUM(trip_distance) 
+FROM taxi_trips_2017;
 
 -- Identify Longest and Shortest Trips
 SELECT MAX(trip_duration) AS longest_trip, MIN(trip_duration) AS shortest_trip

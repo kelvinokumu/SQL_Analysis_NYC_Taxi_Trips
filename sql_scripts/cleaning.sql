@@ -26,7 +26,7 @@ ADD COLUMN trip_duration INTERVAL;
 UPDATE taxi_trips_2017
 SET trip_duration = lpep_dropoff_datetime - lpep_pickup_datetime;
 
-Get negative trip durations
+-- Get negative trip durations
 SELECT COUNT(*)
 FROM taxi_trips_2017
 WHERE trip_duration <= INTERVAL '0 seconds';

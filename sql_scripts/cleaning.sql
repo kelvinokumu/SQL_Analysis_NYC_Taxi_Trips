@@ -16,8 +16,6 @@ ALTER TABLE taxi_trips_2017 DROP COLUMN store_and_fwd_flag;
 -- Rename the new BOOLEAN column to the original column name (optional)
 ALTER TABLE taxi_trips_2017 RENAME COLUMN new_store_and_fwd_flag TO store_and_fwd_flag;
 
-
-
 -- Add a new column for trip_duration
 ALTER TABLE taxi_trips_2017
 ADD COLUMN trip_duration INTERVAL;

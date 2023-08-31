@@ -13,7 +13,6 @@ FROM taxi_trips_2017;
 -- Check Store and Forward Flags
 SELECT COUNT(*) FROM taxi_trips_2017 WHERE store_and_fwd_flag = true;
 
-
 -- Calculate Total Tip Amount and Average Tip Percentage
 SELECT SUM(tip_amount) AS total_tip_amount,
       (SUM(tip_amount) / SUM(fare_amount)) * 100 AS avg_tip_percentage
@@ -81,4 +80,3 @@ UNION ALL
     ORDER BY pickup_count
     LIMIT 10
 );
-

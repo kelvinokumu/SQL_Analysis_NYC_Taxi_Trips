@@ -1,18 +1,19 @@
-## Taxi Trips Data Analysis SQL Queries
+# Taxi Trips Data Analysis SQL Queries
 
-This repository contains a set of SQL queries designed to analyze a dataset of taxi trips from the year 2017. These queries are intended to help you gain insights into various aspects of the taxi trips, including fare amounts, trip distances, passenger counts, pickup locations, and more.
+ - This repository contains a set of SQL queries designed to analyze a dataset of taxi trips from the year 2017. These queries are intended to help you gain insights into various aspects of the taxi trips, including fare amounts, trip distances, passenger counts, pickup locations, and more.
 Overview
 
-The dataset, named taxi_trips_2017, contains information about taxi trips that occurred in the year 2017. The dataset includes details such as pickup and drop-off times, trip duration, fare amounts, tip amounts, passenger counts, and pickup locations.
+ - The dataset, named taxi_trips_2017, contains information about taxi trips that occurred in the year 2017. The dataset includes details such as pickup and drop-off times, trip duration, fare amounts, tip amounts, passenger counts, and pickup locations.
 
-The provided SQL queries are designed to answer specific questions about the dataset and extract meaningful insights from it. Each query is accompanied by explanatory comments to help you understand its purpose and functionality.
-Queries
+ - The provided SQL queries are designed to answer specific questions about the dataset and extract meaningful insights from it. Each query is accompanied by explanatory comments to help you understand its purpose and functionality.
 
-    Calculate Average Fare Amount: This query calculates the average fare amount for all taxi trips in the dataset.
+## Queries
 
-    Calculate Total Trip Distance: This query calculates the total trip distance covered by all taxi trips.
+1. **Calculate Average Fare Amount**: This query calculates the average fare amount for all taxi trips in the dataset.
 
-    Identify Longest and Shortest Trips: Find the longest and shortest trip durations among all the taxi trips.
+2. **Calculate Total Trip Distance**: This query calculates the total trip distance covered by all taxi trips.
+
+3. **Identify Longest and Shortest Trips**: Find the longest and shortest trip durations among all the taxi trips.
 
     Check Store and Forward Flags: Count the number of trips where the store and forward flag is set to true.
 

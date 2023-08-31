@@ -1,21 +1,35 @@
-# 2020 New York Taxi Trips Analysis with Python
+## Taxi Trips Data Analysis SQL Queries
 
-Welcome to the world of data-driven exploration of New York City's iconic yellow taxis! In this project, we will dive into the vast dataset of 2020 New York taxi trips using Python to gain valuable insights into the city's transportation patterns, peak hours, popular routes, and much more.
+This repository contains a set of SQL queries designed to analyze a dataset of taxi trips from the year 2017. These queries are intended to help you gain insights into various aspects of the taxi trips, including fare amounts, trip distances, passenger counts, pickup locations, and more.
+Overview
 
-The yellow taxis are an integral part of the city's daily life, ferrying millions of passengers across the bustling streets of New York. By harnessing the power of Python and its versatile data analysis libraries, we will uncover hidden patterns and trends buried within this massive dataset.
+The dataset, named taxi_trips_2017, contains information about taxi trips that occurred in the year 2017. The dataset includes details such as pickup and drop-off times, trip duration, fare amounts, tip amounts, passenger counts, and pickup locations.
 
-## Our analysis will be structured as follows:
+The provided SQL queries are designed to answer specific questions about the dataset and extract meaningful insights from it. Each query is accompanied by explanatory comments to help you understand its purpose and functionality.
+Queries
 
-Data Acquisition: We will start by obtaining the dataset, which contains detailed information about every taxi trip taken throughout 2020. This data will serve as the foundation for our analysis.
+    Calculate Average Fare Amount: This query calculates the average fare amount for all taxi trips in the dataset.
 
-Data Preprocessing: Before diving into the analysis, we need to clean and prepare the data. This step involves handling missing values, removing outliers, and converting data into a suitable format for analysis.
+    Calculate Total Trip Distance: This query calculates the total trip distance covered by all taxi trips.
 
-Exploratory Data Analysis (EDA): This is where the real fun begins! We will use Python's powerful libraries like Pandas, Matplotlib, and Seaborn to visualize and understand the dataset's characteristics. We will explore key metrics such as trip durations, trip distances, fare amounts, and passenger counts to draw meaningful insights.
+    Identify Longest and Shortest Trips: Find the longest and shortest trip durations among all the taxi trips.
 
-Time Series Analysis: As taxi trips exhibit temporal patterns, we will conduct a time series analysis to uncover trends throughout the year. This will help us identify busy periods, seasonality, and any significant changes in taxi usage.
+    Check Store and Forward Flags: Count the number of trips where the store and forward flag is set to true.
 
-Peak Hour Analysis: Understanding peak hours is crucial for both passengers and taxi drivers. We will analyze the dataset to determine the busiest times of the day, week, and month.
+    Calculate Total Tip Amount and Average Tip Percentage: This query calculates the total tip amount and the average tip percentage for all trips where fare amount is greater than zero.
 
-Fare Analysis: We will delve into fare structures and identify factors influencing fare amounts. This analysis can provide valuable insights for passengers and taxi drivers alike.
+    Passenger Count per Hour: Calculate the number of trips made during each hour of the day and present the results in descending order.
 
-Conclusion: In the final section, we will summarize our findings and discuss the implications of our analysis. We will also consider potential areas for improvement in the New York taxi system based on the patterns discovered.
+    Average Tip Percentage by Payment Type: Calculate the average tip percentage for different payment types, considering only trips with positive fare amounts.
+
+    Common Payment Type: Find the most common payment types used for taxi trips, excluding trips with zero or negative fare amounts.
+
+    Common Trip Type Count: Determine the most common trip types based on fare amounts greater than zero.
+
+    Trip Count by Month: Calculate the number of trips made in each month of the year and present the results in descending order.
+
+    Passenger Count Analysis: Explore the distribution of trips across different passenger counts.
+
+    Average Fare Analysis: Calculate the average fare for trips with varying passenger counts.
+
+    Best and Worst Pickup Locations: Identify the top 10 and bottom 10 pickup locations based on the frequency of trips.

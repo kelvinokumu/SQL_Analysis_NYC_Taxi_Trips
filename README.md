@@ -11,8 +11,10 @@ Overview
 
 1. **Calculate Average Fare Amount**: This query calculates the average fare amount for all taxi trips in the dataset.
 
+***
 2. **Calculate Total Trip Distance**: This query calculates the total trip distance covered by all taxi trips.
 
+***
 3. **Identify Longest and Shortest Trips**: Find the longest and shortest trip durations among all the taxi trips.
 
 4. **Check Store and Forward Flags**: Count the number of trips where the store and forward flag is set to true.

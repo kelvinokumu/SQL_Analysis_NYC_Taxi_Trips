@@ -1,10 +1,12 @@
 ## Solutions
 
 1. **What is the Average Fare Amount**
+
 ![ERD diagram](images/1.png)
 ![ERD diagram](images/1a.png)
 ***
 2. **What is the Total Trip Distance**
+
 ![ERD diagram](images/2.png)
 ![ERD diagram](images/2a.png)
 ***
